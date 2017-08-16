@@ -40,19 +40,26 @@ class Tabla: UITableViewController{
         let cargar = datis[indexPath.row]
         
         cell.titulo.text = cargar.name
+        cell.tel.text = String(cargar.telefono)
     
         return cell
     }
     
     
     private func cargardata(){
-        guard let carga1 = Data(name: "bskba") else{
+        guard let carga1 = Data(name: "Alex", telefono: 76680890) else{
             fatalError("error")
         }
-        guard let carga2 = Data(name: "bskba") else{
+        guard let carga2 = Data(name: "Alex", telefono: 76680890) else{
             fatalError("error")
         }
-        datis += [carga1,carga2]
+        guard let carga3 = Data(name: "Alex", telefono: 76680890) else{
+            fatalError("error")
+        }
+        guard let carga4 = Data(name: "Alex", telefono: 76680890) else{
+            fatalError("error")
+        }
+        datis += [carga1,carga2,carga3,carga4]
         
     }
     

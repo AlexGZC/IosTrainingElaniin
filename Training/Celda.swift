@@ -11,8 +11,9 @@ import UIKit
 
 class Celda: UITableViewCell{
     
-    @IBOutlet weak var imagen: UIImageView!
     
+    
+    @IBOutlet weak var tel: UILabel!
     @IBOutlet weak var titulo: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()

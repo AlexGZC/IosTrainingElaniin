@@ -49,12 +49,12 @@ class ViewController: UIViewController {
                 self.present(alertController2, animated: true, completion: nil)    }
                 
             else{
-                Auth.auth().signIn(withEmail: <#T##String#>, password: <#T##String#>, completion: <#T##AuthResultCallback?##AuthResultCallback?##(User?, Error?) -> Void#>)
+              
                    
-                        
+                 
                     
                     viewControllerB.Labelstext = self.Email.text!
-                }
+                
                 
                 
             }

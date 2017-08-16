@@ -12,11 +12,12 @@ class Data {
     
 
 var name: String
+var telefono: Int
 
 
 //MARK: Initialization
 
-init?(name: String) {
+init?(name: String, telefono: Int) {
     
     // The name must not be empty
     guard !name.isEmpty else {
@@ -25,6 +26,8 @@ init?(name: String) {
     
   
     self.name = name
+    
+    self.telefono = telefono
   
     
 }
