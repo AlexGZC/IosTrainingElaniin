@@ -8,5 +8,8 @@ target 'Training' do
   # Pods for Training
 
  pod 'Firebase/Auth'
+ pod 'Firebase/Database'
+ pod 'Alamofire', '~> 4.4'
+ pod 'SwiftyJSON'
 
 end

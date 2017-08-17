@@ -22,8 +22,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-       FirebaseApp.configure()
-       
+      
+        Auth.auth().addStateDidChangeListener() { auth, user in
+            if user != nil {
+              
+            }
+        }
         
     }
 
@@ -49,13 +53,8 @@ class ViewController: UIViewController {
                 self.present(alertController2, animated: true, completion: nil)    }
                 
             else{
-              
-                   
-                 
-                    
-                    viewControllerB.Labelstext = self.Email.text!
-                
-                
+               
+                      viewControllerB.Labelstext = self.Email.text!
                 
             }
 
@@ -67,5 +66,14 @@ class ViewController: UIViewController {
     }
     
     
+    func showAlert(_ message: String) {
+        let alertController = UIAlertController(title: "To Do App", message: message, preferredStyle: UIAlertControllerStyle.alert)
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    func signIn() {
+        performSegue(withIdentifier: "user", sender: nil)
+    }
     
 }

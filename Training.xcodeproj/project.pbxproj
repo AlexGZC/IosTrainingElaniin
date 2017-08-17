@@ -8,9 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		F4724F27CF719C076DA4BF9B /* Pods_Training.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF8A04DA208664555A66E6A0 /* Pods_Training.framework */; };
+		FA3FA7DA1F44D74A0088E041 /* TablaView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3FA7D91F44D74A0088E041 /* TablaView2.swift */; };
+		FA3FA7DC1F44E33C0088E041 /* Modelo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3FA7DB1F44E33B0088E041 /* Modelo.swift */; };
 		FA41916E1F4343AE00F94B3B /* Tabla.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41916D1F4343AE00F94B3B /* Tabla.swift */; };
 		FA4191701F434F7100F94B3B /* Celda.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41916F1F434F7100F94B3B /* Celda.swift */; };
 		FA4191721F43585600F94B3B /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4191711F43585600F94B3B /* Data.swift */; };
+		FA45E5761F45E1AB001D850F /* Parse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45E5751F45E1AB001D850F /* Parse.swift */; };
+		FA45E5781F45E43E001D850F /* CellparseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45E5771F45E43E001D850F /* CellparseTableViewCell.swift */; };
+		FA45E57A1F45E921001D850F /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45E5791F45E921001D850F /* Contacts.swift */; };
 		FA6BA64F1F41ED600018A451 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6BA64E1F41ED600018A451 /* AppDelegate.swift */; };
 		FA6BA6511F41ED600018A451 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6BA6501F41ED600018A451 /* ViewController.swift */; };
 		FA6BA6541F41ED600018A451 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA6BA6521F41ED600018A451 /* Main.storyboard */; };
@@ -43,9 +48,14 @@
 		3353CB595D351A07925A2907 /* Pods-Training.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Training.release.xcconfig"; path = "Pods/Target Support Files/Pods-Training/Pods-Training.release.xcconfig"; sourceTree = "<group>"; };
 		6A7FA7B96EF505A0B35A9FCD /* Pods-Training.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Training.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Training/Pods-Training.debug.xcconfig"; sourceTree = "<group>"; };
 		AF8A04DA208664555A66E6A0 /* Pods_Training.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Training.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA3FA7D91F44D74A0088E041 /* TablaView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TablaView2.swift; sourceTree = "<group>"; };
+		FA3FA7DB1F44E33B0088E041 /* Modelo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Modelo.swift; sourceTree = "<group>"; };
 		FA41916D1F4343AE00F94B3B /* Tabla.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tabla.swift; sourceTree = "<group>"; };
 		FA41916F1F434F7100F94B3B /* Celda.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Celda.swift; sourceTree = "<group>"; };
 		FA4191711F43585600F94B3B /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		FA45E5751F45E1AB001D850F /* Parse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parse.swift; sourceTree = "<group>"; };
+		FA45E5771F45E43E001D850F /* CellparseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellparseTableViewCell.swift; sourceTree = "<group>"; };
+		FA45E5791F45E921001D850F /* Contacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Contacts.swift; path = ../../../Downloads/codegen_5995ae006c8ff/Contacts.swift; sourceTree = "<group>"; };
 		FA6BA64B1F41ED600018A451 /* Training.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Training.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA6BA64E1F41ED600018A451 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA6BA6501F41ED600018A451 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +148,11 @@
 				FA41916D1F4343AE00F94B3B /* Tabla.swift */,
 				FA41916F1F434F7100F94B3B /* Celda.swift */,
 				FA4191711F43585600F94B3B /* Data.swift */,
+				FA3FA7D91F44D74A0088E041 /* TablaView2.swift */,
+				FA3FA7DB1F44E33B0088E041 /* Modelo.swift */,
+				FA45E5751F45E1AB001D850F /* Parse.swift */,
+				FA45E5771F45E43E001D850F /* CellparseTableViewCell.swift */,
+				FA45E5791F45E921001D850F /* Contacts.swift */,
 				FA6BA6521F41ED600018A451 /* Main.storyboard */,
 				FA6BA6551F41ED600018A451 /* Assets.xcassets */,
 				FA6BA6571F41ED600018A451 /* LaunchScreen.storyboard */,
@@ -305,14 +320,18 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Training/Pods-Training-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,11 +380,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA6BA6511F41ED600018A451 /* ViewController.swift in Sources */,
+				FA3FA7DA1F44D74A0088E041 /* TablaView2.swift in Sources */,
 				FA4191721F43585600F94B3B /* Data.swift in Sources */,
 				FA6BA64F1F41ED600018A451 /* AppDelegate.swift in Sources */,
 				FA41916E1F4343AE00F94B3B /* Tabla.swift in Sources */,
 				FA4191701F434F7100F94B3B /* Celda.swift in Sources */,
+				FA45E57A1F45E921001D850F /* Contacts.swift in Sources */,
 				FA6BA67D1F4233540018A451 /* SecondScreen.swift in Sources */,
+				FA45E5761F45E1AB001D850F /* Parse.swift in Sources */,
+				FA3FA7DC1F44E33C0088E041 /* Modelo.swift in Sources */,
+				FA45E5781F45E43E001D850F /* CellparseTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
