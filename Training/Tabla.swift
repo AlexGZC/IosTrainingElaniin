@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class Tabla: UITableViewController{
-    var datis = [Data]()
+    var userdata = [Data]()
     
     override func viewDidLoad() {
         cargardata()
@@ -27,7 +27,7 @@ class Tabla: UITableViewController{
         return 1
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return datis.count
+        return userdata.count
     }
 
     
@@ -38,7 +38,7 @@ class Tabla: UITableViewController{
             Celda else{
                 fatalError("La instancia de la celda no funciona")
         }
-        let cargar = datis[indexPath.row]
+        let cargar = userdata[indexPath.row]
         
         cell.titulo.text = cargar.name
         cell.tel.text = String(cargar.telefono)
@@ -60,7 +60,7 @@ class Tabla: UITableViewController{
         guard let carga4 = Data(name: "Alex", telefono: 76680890) else{
             fatalError("error")
         }
-        datis += [carga1,carga2,carga3,carga4]
+        userdata += [carga1,carga2,carga3,carga4]
         
     }
     

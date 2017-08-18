@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CellparseTableViewCell: UITableViewCell {
+class Cellparse: UITableViewCell {
 
     @IBOutlet weak var email: UILabel!
     @IBOutlet weak var nombre: UILabel!

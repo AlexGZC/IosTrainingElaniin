@@ -65,13 +65,7 @@ class ViewController: UIViewController {
         
     }
     
-    
-    func showAlert(_ message: String) {
-        let alertController = UIAlertController(title: "To Do App", message: message, preferredStyle: UIAlertControllerStyle.alert)
-        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
-        self.present(alertController, animated: true, completion: nil)
-    }
-    
+
     func signIn() {
         performSegue(withIdentifier: "user", sender: nil)
     }

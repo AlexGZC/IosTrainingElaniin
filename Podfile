@@ -11,5 +11,5 @@ target 'Training' do
  pod 'Firebase/Database'
  pod 'Alamofire', '~> 4.4'
  pod 'SwiftyJSON'
-
+ pod 'NVActivityIndicatorView'
 end
