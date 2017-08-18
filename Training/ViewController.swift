@@ -23,11 +23,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
       
-        Auth.auth().addStateDidChangeListener() { auth, user in
-            if user != nil {
-              
-            }
-        }
+        
         
     }
 
@@ -36,7 +32,20 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func Logear(sender: UIButton) {
+
+    @IBAction func loginTapped(_ sender: UIButton) {
+        Auth.auth().signIn(withEmail: self.Email.text!, password: self.Password.text!){(error,user)in
+            if error != nil{
+            self.performSegue(withIdentifier: "user", sender:self)
+        }else{
+                
+                    let alertController1 = UIAlertController(title: "Error", message:"Debe ingresar un EMAIL", preferredStyle: UIAlertControllerStyle.alert)
+                    alertController1.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default,handler: nil))
+                    self.present(alertController1, animated: true, completion: nil)
+                
+        }
+        }
+        
         
     }
     
@@ -64,10 +73,9 @@ class ViewController: UIViewController {
         
         
     }
+}
     
 
-    func signIn() {
-        performSegue(withIdentifier: "user", sender: nil)
-    }
-    
-}
+   
+
+

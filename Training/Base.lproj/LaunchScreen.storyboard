@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_7" orientation="portrait">
+    <device id="ipad10_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,11 +18,11 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cargando prueba..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUI-jH-yET">
-                                <rect key="frame" x="83" y="282" width="220" height="21"/>
+                                <rect key="frame" x="343" y="545.5" width="148" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.97264532280000005" green="1" blue="0.99424161509999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -31,10 +30,8 @@
                         </subviews>
                         <color key="backgroundColor" red="0.3031127964" green="0.68563122190000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="gUI-jH-yET" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="262" id="Krg-Mb-viu"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="gUI-jH-yET" secondAttribute="bottom" constant="364" id="Kv3-eS-PZR"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="gUI-jH-yET" secondAttribute="trailing" constant="56" id="qQf-ba-Z2q"/>
-                            <constraint firstItem="gUI-jH-yET" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="67" id="wvg-ML-Om8"/>
+                            <constraint firstItem="gUI-jH-yET" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="4P6-6a-vwh"/>
+                            <constraint firstItem="gUI-jH-yET" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="dyo-8C-bNL"/>
                         </constraints>
                     </view>
                 </viewController>
