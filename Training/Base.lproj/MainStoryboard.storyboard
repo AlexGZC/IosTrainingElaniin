@@ -34,16 +34,14 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Aplicacion Prueba" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aTY-Mc-nRr">
-                                <rect key="frame" x="138" y="42" width="138" height="20.666666666666664"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aplicacion Prueba" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aTY-Mc-nRr">
+                                <rect key="frame" x="138" y="42" width="138" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.30311279640182243" green="0.6856312218542413" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3q-No-1w1">
-                                <rect key="frame" x="120" y="431" width="175" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3q-No-1w1">
+                                <rect key="frame" x="134" y="537" width="146" height="30"/>
                                 <state key="normal" title="Ejemplo tabla y celda">
                                     <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
@@ -51,16 +49,23 @@
                                     <segue destination="lHi-sa-MFJ" kind="modal" id="TAL-IY-8Nq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SyE-Ah-QcR">
-                                <rect key="frame" x="107" y="484" width="197" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Alamo Fire y SwiftyJson"/>
-                                <connections>
-                                    <segue destination="MQ8-sK-DMP" kind="modal" id="T3k-cQ-EIq"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GtF-gQ-WJ8">
-                                <rect key="frame" x="156" y="353" width="103" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="yIV-PE-CIE">
+                                <rect key="frame" x="18" y="112" width="374" height="30"/>
+                                <color key="backgroundColor" red="0.3031127964" green="0.68563122190000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.972645322772973" green="1" blue="0.99424161512921594" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ou6-Kh-C9y">
+                                <rect key="frame" x="152" y="269" width="132" height="198"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GtF-gQ-WJ8">
+                                <rect key="frame" x="188" y="481" width="38" height="30"/>
                                 <color key="backgroundColor" red="0.3031127964" green="0.68563122190000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration" identifier="Login"/>
                                 <state key="normal" title="Login">
@@ -76,31 +81,34 @@
                                     <segue destination="E5c-58-DG3" kind="modal" identifier="user" id="NJH-KP-u6A"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="yIV-PE-CIE">
-                                <rect key="frame" x="18" y="112" width="374" height="30"/>
-                                <color key="backgroundColor" red="0.3031127964" green="0.68563122190000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="textColor" red="0.972645322772973" green="1" blue="0.99424161512921594" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
-                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SyE-Ah-QcR">
+                                <rect key="frame" x="126" y="612" width="163" height="30"/>
+                                <state key="normal" title="Alamo Fire y SwiftyJson"/>
+                                <connections>
+                                    <segue destination="MQ8-sK-DMP" kind="modal" id="T3k-cQ-EIq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="aTY-Mc-nRr" firstAttribute="top" secondItem="l6W-NI-EfJ" secondAttribute="bottom" constant="22" id="998-09-0pg"/>
                             <constraint firstItem="yIV-PE-CIE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-2" id="BNr-ZG-meT"/>
-                            <constraint firstItem="GtF-gQ-WJ8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cpi-ZW-OMg"/>
-                            <constraint firstItem="GtF-gQ-WJ8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F3J-Iq-vYz"/>
-                            <constraint firstItem="GtF-gQ-WJ8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KVl-Zl-teu"/>
+                            <constraint firstItem="GtF-gQ-WJ8" firstAttribute="top" secondItem="ou6-Kh-C9y" secondAttribute="bottom" constant="14" id="DFx-7N-Oc5"/>
+                            <constraint firstItem="ou6-Kh-C9y" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ELV-SQ-dhX"/>
+                            <constraint firstItem="2Kh-yg-72b" firstAttribute="top" secondItem="SyE-Ah-QcR" secondAttribute="bottom" constant="94" id="Eh8-ti-17P"/>
+                            <constraint firstAttribute="trailing" secondItem="ou6-Kh-C9y" secondAttribute="trailing" constant="130" id="HDi-KX-0Pb"/>
+                            <constraint firstItem="SyE-Ah-QcR" firstAttribute="centerX" secondItem="O3q-No-1w1" secondAttribute="centerX" id="LWm-t1-fTQ"/>
                             <constraint firstItem="Sp7-oO-EKq" firstAttribute="top" secondItem="l6W-NI-EfJ" secondAttribute="bottom" constant="198" id="Lcl-C4-Y4X"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Sp7-oO-EKq" secondAttribute="leading" id="QaK-je-yGY"/>
-                            <constraint firstItem="GtF-gQ-WJ8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TDe-cN-v3c"/>
+                            <constraint firstItem="SyE-Ah-QcR" firstAttribute="top" secondItem="O3q-No-1w1" secondAttribute="bottom" constant="45" id="S9J-gj-zXA"/>
                             <constraint firstItem="yIV-PE-CIE" firstAttribute="top" secondItem="l6W-NI-EfJ" secondAttribute="bottom" constant="92" id="YRd-QN-mVb"/>
+                            <constraint firstItem="aTY-Mc-nRr" firstAttribute="centerX" secondItem="Sp7-oO-EKq" secondAttribute="centerX" id="gIk-xG-APS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="yIV-PE-CIE" secondAttribute="trailing" constant="2" id="hbM-ig-p8X"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Sp7-oO-EKq" secondAttribute="trailing" id="jIo-bx-Sco"/>
+                            <constraint firstItem="SyE-Ah-QcR" firstAttribute="centerX" secondItem="GtF-gQ-WJ8" secondAttribute="centerX" id="qAF-m3-vRm"/>
+                            <constraint firstItem="ou6-Kh-C9y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="152" id="xCi-4P-thv"/>
+                            <constraint firstItem="O3q-No-1w1" firstAttribute="top" secondItem="GtF-gQ-WJ8" secondAttribute="bottom" constant="26" id="xpL-mY-bvz"/>
+                            <constraint firstItem="SyE-Ah-QcR" firstAttribute="centerX" secondItem="Sp7-oO-EKq" secondAttribute="centerX" id="xrJ-Zw-Xx1"/>
                         </constraints>
                     </view>
                     <connections>
